@@ -1,26 +1,35 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  position: absolute;
   width: 100%;
-}
-
-#particles-js {
   height: 100%;
-  background: #a4b0be;
-  position: absolute;
-  width: 100%;
+  color: white;
+  background: linear-gradient(#413866, #57606f);
 }
 
-.header {
-  position: absolute;
+/* Nav Bar */
+header nav a {
+  text-decoration: none;
+  font-size: 0.8 rem;
+  margin: 0 50px 0 0;
+  padding: 40px;
+  color: lightgray;
 }
 
-h1 {
-  position: absolute;
+/*FAQ page  */
+.questions h1 {
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 400px;
+  font-size: 4.3rem;
 }
 
-h2 {
-  position: absolute;
+.questions h2 {
+  margin: 100px;
+}
+
+.list {
+  margin: 35px;
+  padding: 5px;
 }
