@@ -17,10 +17,21 @@ body {
   position: absolute;
 }
 
-h1 {
+.questions h1 {
   position: absolute;
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 400px;
 }
 
-h2 {
+.questions h2 {
   position: absolute;
+  margin: 100px;
+}
+
+.list {
+  position: absolute;
+  margin: 50px 200px;
+  padding: 100px;
 }
