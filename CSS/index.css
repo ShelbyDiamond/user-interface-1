@@ -152,7 +152,15 @@ header nav a {
   margin: 100px;
 }
 /*questions listed out*/
-.list {
+.list1 {
+  background: black;
+  color: white;
+}
+.list2 {
   margin: 35px;
   padding: 5px;
+  display: flex;
+  flex-direction: column-reverse;
+  background: darkslategray;
+  color: white;
 }
