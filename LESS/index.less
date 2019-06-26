@@ -1,37 +1,16 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 @import "./mixins.less";
 @import "../components/Dropdown/Dropdown.less";
 @import "../components/Tabs/Tabs.less";
 
 body {
-  box-sizing: border-box;
   min-width: 300px;
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
+  background: linear-gradient(#52a577, #57606f);
 }
-/* Nav Bar */
-header {
-  nav {
-    a {
-      text-decoration: none;
-      font-size: 0.8 rem;
-      margin: 0 50px 0 0;
-      padding: 40px;
-      color: black;
-    }
-  }
-}
-
 .header-container {
   width: 100%;
-  height: 70px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,17 +20,13 @@ header {
   }
 }
 
-.stories {
-  justify-content: center;
-}
-
 .section {
   width: 70%;
-  margin: 45px auto;
+  margin: 45px;
   display: flex;
   border: 1px solid @lambda-red;
-  box-shadow: 1px 1px 5px @lambda-red;
   border-radius: 10px;
+  box-shadow: 1px 1px 5px @lambda-red;
   overflow: hidden;
   .box {
     padding: 40px;
@@ -64,32 +39,76 @@ header {
 }
 /*FAQ page  */
 
-/* Heading*/
+/* Heading / Nav Bar */
 .questions {
-  h1 {
-    width: 350px;
-    padding: 20px;
-    text-align: center;
-    margin-left: 400px;
-  }
-
-  /* Paragraph about heading*/
-  h2 {
-    margin: 100px;
-  }
-}
-
-/*questions listed out*/
-.list1 {
-  background: black;
-  color: white;
-}
-
-.list2 {
-  margin: 35px;
-  padding: 5px;
+  box-shadow: 10px 10px 5px grey;
+  background: white;
   display: flex;
-  flex-direction: column-reverse;
-  background: darkslategray;
-  color: white;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 15px;
+  a {
+    text-decoration: none;
+    font-size: 0.8 rem;
+    padding: auto;
+    color: black;
+  }
+}
+h1 {
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 400px;
+  font-size: 1.2rem;
+}
+
+/* Paragraph about heading*/
+h2 {
+  margin: 100px;
+}
+
+// /*questions listed out*/
+
+// /* Odd number questions*/
+.orderedlist {
+  display: flex;
+  flex-wrap: wrap;
+  .list1 {
+    background: black;
+    border: 2px solid red;
+    color: white;
+    margin: 60px;
+    padding: 35px;
+    p {
+      margin: 35px;
+      padding-top: 15px;
+      padding-bottom: 35px;
+    }
+  }
+
+  // /* Even number questions */
+  .list2 {
+    margin: 50px;
+    padding: 35px;
+    background: darkslategrey;
+    color: white;
+  }
+}
+
+/* User Stories Page */
+.stories {
+  box-shadow: 10px 10px 5px grey;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 15px;
+  a {
+    text-decoration: none;
+    font-size: 0.8 rem;
+    padding: auto;
+    color: black;
+  }
 }
