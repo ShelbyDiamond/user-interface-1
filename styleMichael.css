@@ -1,0 +1,387 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+ }
+ 
+ .loginButton {
+    position: absolute;
+    background: white;
+    border: black;
+    font-size: 17px;
+    padding: 18px 18px;
+    border-radius: 10px;
+    margin-left: 1600px;
+    margin-top: -40px;
+    transition: all 0.5s ease;
+}
+
+.loginButton a {
+    text-decoration: none;
+    color: black;
+}
+
+.loginButton:hover {
+    background: crimson;
+    color: white;
+    border: white;
+}
+
+.loginButton a:hover {
+    color: white;
+    border: white;
+}
+
+ .dropdown {
+    position: relative;
+    color: black;
+    border: solid 1px black;
+    width: 100px;
+    display: flex;
+    margin-top: -570px;
+    margin-left: 370px;
+    background: white;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.5s ease
+}
+
+.dropdown:hover {
+    color: white;
+    background:  crimson;
+    cursor: pointer;
+    border: solid 1px white;
+}
+
+
+.dropdownFunction {
+    display: none;
+    position: absolute;
+    width: 59px;
+    background: white;
+    z-index: 1;
+    left:  0;
+    top: 52%;
+    
+    color: black;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    font-size: 14px;
+    
+    
+    
+}
+
+ .dropdownFunction:hover {
+   
+    background:  crimson;
+    cursor: pointer;
+    border-bottom: solid 1px white;
+    border-right: solid 1px white;
+    border-left: solid 1px white;
+    
+    
+} 
+
+.dropdownFunction a:hover {
+    color: white;
+    
+}
+
+
+.dropdownFunction a {
+    padding-left: 0px;
+    text-decoration: none;
+    color: black;
+   
+}
+
+#dropDownFunction.active {
+    display: block;
+}
+
+ body {
+    margin: 0 ;
+    padding: 0;
+    height: 100vh;
+    position: absolute;
+    
+    width: 100%;
+}
+
+#particles-js {
+    height: 99.95%;
+    background: linear-gradient(black, darkblue);
+    position: absolute;
+    width: 100%;
+
+ 
+    
+ }  
+
+.header {
+     color: white;
+    margin: 60px;
+    width: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    width: 380px;
+    height: 50px;
+    font-size: 40px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between; 
+    text-decoration: none;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.header a:hover{
+    color: grey;
+    }
+
+h3 {
+    color: white;
+  
+    width: 100px;  
+    position: relative;
+    width: 1100px;
+    height: 30px;
+    font-size: 26px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+h1 {
+    color: white;
+    
+   justify-content: center;
+    position: relative;
+    width: 1200px;
+    height: 150px;
+    font-size: 55px;
+    display: flex;
+     padding: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.navBar  {
+     padding: 40px; 
+     
+    position: relative;
+    height: 50px;
+    font-size: 35px;
+   margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    width: 1350px;
+    transition: all 0.5s ease;
+}
+
+.navBar a {
+    color: gray;
+    transition: all 0.5s ease;
+}
+
+.navBar a:hover {
+    color: white;
+}
+
+@media (max-width: 1080px) {
+    #particles-js {
+        width: 1430px;
+    }
+
+
+.header {
+    
+    width: 1000px;
+        height: 200px;
+        font-size: 140px;
+        margin-left: 130px;
+}
+
+h3 {
+    font-size: 40px;
+  
+    width: 1165px;
+    height: 100px;
+    margin-left: 65px;
+    padding-bottom: 0px;
+}
+
+h1{
+    font-size: 80px;
+    
+    width: 1160px;
+    height: 300px;
+    margin-left: 55px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 80px;
+    
+    width: 1200px;
+    height: 300px;
+    margin-left: 50px;
+}
+
+.navBar {
+    position: relative;
+ 
+    flex-direction: row;
+    height: 150px;
+    font-size: 35px;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    width: 1300px;
+    color: white;
+}
+
+.navBar a {
+    color: white;
+}
+
+}
+
+/* iPAD ////////////////// */
+
+@media (max-width: 800px) {
+
+    #particles-js {
+        height: 140%;
+        background: linear-gradient(black, darkblue);
+        position: absolute;
+        width: 167%
+    }  
+
+    .header {
+        
+        
+        width: 1000px;
+        height: 200px;
+        font-size: 140px;
+        margin-left: 130px;
+        
+      
+   }
+    
+h3 {
+    font-size: 40px;
+  
+    width: 1165px;
+    height: 100px;
+    margin-left: 65px;
+    padding-bottom: 50px;
+}
+
+h1{
+    font-size: 80px;
+    
+    width: 1160px;
+    height: 300px;
+    margin-left: 55px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 80px;
+    
+    width: 1200px;
+    height: 300px;
+    margin-left: 50px;
+}
+
+.navBar {
+    position: relative;
+    flex-direction: column;
+    height: 450px;
+    font-size: 55px;
+    justify-content: row;
+    margin-left: 400px;
+    width: 700px;
+    color: white;
+}
+
+.navBar a {
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+
+    .homePageMain {
+        
+        margin-top: 500px;
+        height: 700px;
+        margin-left: -20px;
+        
+    }
+
+    .main h1 {
+        font-size: 106px;
+    }
+ 
+#particles-js {
+    display: none;
+}
+
+body {
+    background: black;
+   
+    width: 1230px;
+    width: 1230px;
+    margin-left: 10px;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.header  a{
+    font-size: 147px;
+}
+
+.apology h3 {
+   font-size: 60px;
+   margin-left: 10px;
+   margin-top: 10px;
+}
+
+.apology {
+    padding: 20px;
+}
+
+.navBar {
+    margin-top: 450px;
+    width: 1230px;
+    height: 800px;
+    align-content: space-between;
+    
+    margin-left: 20px;
+}
+
+.navBar a {
+    font-size: 110px;
+}
+
+}
+
+}
+
