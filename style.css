@@ -25,11 +25,11 @@ header nav a {
   margin-left: 400px;
   font-size: 4.3rem;
 }
-/* Emoji Image*/
-.questions img {
-  height: 75px;
-  width: 75px;
-  display: inline-flexbox;
+
+/* FAQ Image*/
+img {
+  height: auto;
+  width: 100%;
 }
 /* Paragraph about heading*/
 .questions h2 {
