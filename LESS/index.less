@@ -4,15 +4,13 @@
 
 body {
   min-width: 300px;
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(#52a577, #57606f);
 }
 .header-container {
   width: 100%;
-  height: 70px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,17 +20,13 @@ body {
   }
 }
 
-.stories {
-  justify-content: center;
-}
-
 .section {
   width: 70%;
-  margin: 45px auto;
+  margin: 45px;
   display: flex;
   border: 1px solid @lambda-red;
-  box-shadow: 1px 1px 5px @lambda-red;
   border-radius: 10px;
+  box-shadow: 1px 1px 5px @lambda-red;
   overflow: hidden;
   .box {
     padding: 40px;
@@ -47,18 +41,20 @@ body {
 
 /* Heading / Nav Bar */
 .questions {
-  border: 2px solid white;
   box-shadow: 10px 10px 5px grey;
   background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 15px;
   a {
     text-decoration: none;
     font-size: 0.8 rem;
-    margin: 0 50px 0 0;
-    padding: 40px;
+    padding: auto;
     color: black;
   }
 }
-
 h1 {
   width: 350px;
   padding: 20px;
@@ -72,40 +68,47 @@ h2 {
   margin: 100px;
 }
 
-/*questions listed out*/
+// /*questions listed out*/
 
-/* Odd number questions*/
-.list1 {
+// /* Odd number questions*/
+.orderedlist {
   display: flex;
-  flex-direction: column;
-  background: black;
-  color: white;
-  margin: 60px;
-  padding: 35px;
-  p {
-    margin: 35px;
-    padding-top: 15px;
-    padding-bottom: 35px;
+  flex-wrap: wrap;
+  .list1 {
+    background: black;
+    border: 2px solid red;
+    color: white;
+    margin: 60px;
+    padding: 35px;
+    p {
+      margin: 35px;
+      padding-top: 15px;
+      padding-bottom: 35px;
+    }
+  }
+
+  // /* Even number questions */
+  .list2 {
+    margin: 50px;
+    padding: 35px;
+    background: darkslategrey;
+    color: white;
   }
 }
-/* Even number questions */
-.list2 {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 50px;
-  padding: 35px;
-  background: darkslategrey;
-  color: white;
-}
 
-.div {
-  width: 750px;
-  padding: 35px;
-  margin: 40px;
-}
-
-.div2 {
+/* User Stories Page */
+.stories {
+  box-shadow: 10px 10px 5px grey;
+  background: white;
   display: flex;
-  flex-direction: row-reverse;
-  width: 450px;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 15px;
+  a {
+    text-decoration: none;
+    font-size: 0.8 rem;
+    padding: auto;
+    color: black;
+  }
 }
