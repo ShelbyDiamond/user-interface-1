@@ -1,34 +1,15 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 @import "./mixins.less";
 @import "../components/Dropdown/Dropdown.less";
 @import "../components/Tabs/Tabs.less";
 
 body {
-  box-sizing: border-box;
   min-width: 300px;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+  background: linear-gradient(#52a577, #57606f);
 }
-/* Nav Bar */
-header {
-  nav {
-    a {
-      text-decoration: none;
-      font-size: 0.8 rem;
-      margin: 0 50px 0 0;
-      padding: 40px;
-      color: black;
-    }
-  }
-}
-
 .header-container {
   width: 100%;
   height: 70px;
@@ -64,32 +45,67 @@ header {
 }
 /*FAQ page  */
 
-/* Heading*/
+/* Heading / Nav Bar */
 .questions {
-  h1 {
-    width: 350px;
-    padding: 20px;
-    text-align: center;
-    margin-left: 400px;
+  border: 2px solid white;
+  box-shadow: 10px 10px 5px grey;
+  background: white;
+  a {
+    text-decoration: none;
+    font-size: 0.8 rem;
+    margin: 0 50px 0 0;
+    padding: 40px;
+    color: black;
   }
+}
 
-  /* Paragraph about heading*/
-  h2 {
-    margin: 100px;
-  }
+h1 {
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 400px;
+  font-size: 1.2rem;
+}
+
+/* Paragraph about heading*/
+h2 {
+  margin: 100px;
 }
 
 /*questions listed out*/
+
+/* Odd number questions*/
 .list1 {
+  display: flex;
+  flex-direction: column;
   background: black;
+  color: white;
+  margin: 60px;
+  padding: 35px;
+  p {
+    margin: 35px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+  }
+}
+/* Even number questions */
+.list2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 50px;
+  padding: 35px;
+  background: darkslategrey;
   color: white;
 }
 
-.list2 {
-  margin: 35px;
-  padding: 5px;
+.div {
+  width: 750px;
+  padding: 35px;
+  margin: 40px;
+}
+
+.div2 {
   display: flex;
-  flex-direction: column-reverse;
-  background: darkslategray;
-  color: white;
+  flex-direction: row-reverse;
+  width: 450px;
 }
