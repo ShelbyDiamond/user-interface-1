@@ -1,0 +1,197 @@
+.dropdown {
+  z-index: 5;
+  position: absolute;
+  left: 25px;
+  cursor: pointer;
+}
+.dropdown .dropdown-button {
+  padding: 15px;
+  border: 3px solid white;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.dropdown .dropdown-button:hover {
+  background-color: #1a1a1a;
+}
+.dropdown .dropdown-content {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  border: 2.5px solid black;
+}
+.dropdown .dropdown-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+.dropdown .dropdown-link:hover {
+  color: white;
+  background-color: black;
+}
+.dropdown .dropdown-hidden {
+  display: none;
+}
+.tabs {
+  width: 100%;
+}
+.tabs .tabs-items {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  background: white;
+}
+.tabs .tabs-item {
+  display: none;
+  width: 75%;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+  display: block;
+}
+.tabs .tabs-links {
+  display: flex;
+  background-color: black;
+}
+.tabs .tabs-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: black;
+  border-right: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: #1a1a1a;
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  border-right: 1px solid black;
+  background-color: white;
+  color: black;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: white;
+}
+body {
+  min-width: 300px;
+  width: 100%;
+  height: 100%;
+  background: #383737;
+}
+.header-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.header-container .header {
+  height: 50px;
+}
+.section {
+  width: 70%;
+  margin: 45px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
+  overflow: hidden;
+}
+.section .box {
+  padding: 40px;
+}
+.section .box .box-title {
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+/*FAQ page  */
+/* Heading / Nav Bar */
+.questions {
+  -webkit-box-shadow: inset -7px -4px 5px 0px #52a577;
+  -moz-box-shadow: inset -7px -4px 5px 0px #52a577;
+  box-shadow: inset -7px -4px 5px 0px #52a577;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 15px;
+}
+.questions nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.questions nav a {
+  text-decoration: none;
+  font-size: 0.8 rem;
+  padding: auto;
+  color: black;
+}
+h1 {
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 400px;
+  font-size: 1.2rem;
+}
+/* Paragraph about heading*/
+h2 {
+  margin: 100px;
+}
+.orderedlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+.orderedlist .list {
+  -webkit-box-shadow: inset 3px -5px 5px 0px #52a577;
+  -moz-box-shadow: inset 3px -5px 5px 0px #52a577;
+  box-shadow: inset 3px -5px 5px 0px #52a577;
+  color: #aaaaaa;
+  margin: 60px;
+  padding: 35px;
+  width: 60%;
+}
+.orderedlist .list p {
+  margin: 35px;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+/* User Stories Page */
+.stories {
+  box-shadow: 10px 10px 5px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 15px;
+}
+.stories nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.stories nav a {
+  text-decoration: none;
+  font-size: 0.8 rem;
+  padding: auto;
+  color: black;
+}
